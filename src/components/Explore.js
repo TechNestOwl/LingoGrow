@@ -1,45 +1,44 @@
 import React, {useState} from 'react'
+// import SET_WORD_INFO from '../action-types/userActionType';
+import { displayInfo } from '../actions/userAction';
+import Button from 'react-bootstrap/Button';
+import { useDispatch } from 'react-redux';
 
+export default function Explore(props) {
 
-export default function Explore() {
-
+    const dispatch = useDispatch();
+    const [wordSearch, setWordSearch] = useState();
 
     const fetchWord = async () => {
-
-        fetch("https://wordsapiv1.p.rapidapi.com/words/incredible/definitions", {
+        const data = await fetch(`https://wordsapiv1.p.rapidapi.com/words/${wordSearch}/definitions`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-key": "c5c6d62868msh858f876df559e6bp1ef5afjsn191f714e10b1",
                 "x-rapidapi-host": "wordsapiv1.p.rapidapi.com"
             }
-        })
-        .then(response => {
-            console.log(response);
-        })
-        .catch(err => {
-            console.error(err);
-        });
+                })
+                const jsonData = await data.json()
+                console.log(jsonData)
     };
-
     fetchWord();
-   const handleSubmit = (event)=>{
-       event.preventDefault()
-   }
-   const handleInputChange = (event) =>{
 
-   }
-
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+    
     return (
         <div>
             <h1>Explore</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={e => {handleSubmit(e)}}>
                 <input
                 type="text"
-                name="wordSearch"
-                placeholder="Search for words">
+                name="wordSearchInput"
+                placeholder="Search for words"
+                value = {wordSearch}
+                onChange={e => setWordSearch(e.target.value)}
+                >
                 </input>
-                <button type="submit">Submit</button>
+                <Button type="submit" className="submitButton" onClick={() => dispatch(displayInfo)}>Submit</Button>
             </form>
         </div>
     )

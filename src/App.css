@@ -46,3 +46,10 @@ p {
   color: white;
   text-decoration: none;
 }
+
+.contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}

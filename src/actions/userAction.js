@@ -1,7 +1,7 @@
-import {
-    SEARCH_TEXT,
-} from "../action-types/userActionType";
+import SET_WORD_INFO from "../action-types/userActionType";
 
-export const searchInput = (dispatch) => {
-    return dispatch ({type:SEARCH_TEXT, payload:e.target.value});
+export const displayInfo = (dispatch) => {
+    return dispatch (
+        {type: SET_WORD_INFO, payload:jsonData}
+        );
 };

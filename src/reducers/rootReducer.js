@@ -1,18 +1,8 @@
-import {
-    SEARCH_TEXT,
-} from "../action-types/userActionType";
+import { combineReducers } from "redux"
+import wordReducer from "./wordReducer"
 
-const initialState = {
+const rootReducer = combineReducers({
+    wordInfo : wordReducer
+})
 
-}
-
-export default (state = initialState, { type, payload }) => {
-    switch (type) {
-
-    case SEARCH_TEXT:
-        return { ...state, ...payload }
-
-    default:
-        return state
-    }
-};
+export default rootReducer;

@@ -8,7 +8,7 @@ export default function Footer() {
             <h4>Gill Guimares</h4>
                 <ul>
                     <Link to="/contact">
-                        <li>Contact Me</li>   
+                        <li>Contact</li>   
                     </Link>
                 </ul>
         </div>
