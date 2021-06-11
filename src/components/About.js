@@ -1,8 +1,41 @@
 import React from 'react'
+import landingPhoto from "../assets/landingPhoto.jpg"
+
+
 
 export default function About() {
+    const styling = {
+        backgroundColor: 'rgba(255, 255, 255, .15)',
+        backdropFilter: 'blur(20px)',
+        color: 'black',
+        flexDirection: 'column',
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        textAlign: 'left',
+        fontWeight:'25',
+        fontSize:'40',
+        opacity: '.85',
+        border: '2px solid black',
+        width: '40%',
+        padding: '10px',
+        minWidth: '325px',
+        
+    }
+
+
     return (
-        <div>
+        <div style={{
+            backgroundImage: `url(${landingPhoto})`,
+            backgroundRepeat: 'noRepeat',
+            backgroundAttachment: 'fixed',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            minHeight: '1000px',
+        }}
+        >
+            <br></br>
+            <div style={styling}>
             <h2>About Lingo Grow</h2>
 
             <p>
@@ -18,10 +51,11 @@ export default function About() {
                 The Development Process
             </h2>
             <p>
-            This past week I was given the assignment to build a React app using Redux. The requirements were simple but relevant. This was a tremendous opportunity to display my knowledge of the past three weeks of learning we did here at DigitalCrafts bootcamp. Looking back on the four days I was given to create this project, I feel my time/assets could have been better managed at the start. The first day I spent researching potential builds, weighing in the scope, production time, and over all applicability to demo the technologies I recently learned. The second I spent building out a project that was doomed to fail. I bit off more than I could chew and got lost in the sauce of styling before my functionality was complete. The third and fourth day I spent creating two separate apps. They essentially did very similar things, had an API, CRUD, implemented Redux and met the requirements we were given.
-One of the lessons I can take away from this week of development, is that initial planning is worth it’s weight in gold. So much wasted effort went into creating a poorly planned out project, and too much time was wasted on styling before the project had even taken off. Admittedly, I was too presumptuous with my time and ability to handle blockers that came up. In the future, I will be more diligent with managing my allotted resources. Perhaps there is merit in the adage to under-promise and over-deliver.
-I look forward to continuing development on all the projects I started this week.Going forward my focus will be narrowed and better thought out.
+                This past week I was given the assignment to build a React app using Redux. The requirements were simple but relevant. This was a tremendous opportunity to display my knowledge of the past three weeks of learning we did here at DigitalCrafts bootcamp. Looking back on the four days I was given to create this project, I feel my time/assets could have been better managed at the start. The first day I spent researching potential builds, weighing in the scope, production time, and over all applicability to demo the technologies I recently learned. The second I spent building out a project that was doomed to fail. I bit off more than I could chew and got lost in the sauce of styling before my functionality was complete. The third and fourth day I spent creating two separate apps. They essentially did very similar things, had an API, CRUD, implemented Redux and met the requirements we were given.
+                One of the lessons I can take away from this week of development, is that initial planning is worth it’s weight in gold. So much wasted effort went into creating a poorly planned out project, and too much time was wasted on styling before the project had even taken off. Admittedly, I was too presumptuous with my time and ability to handle blockers that came up. In the future, I will be more diligent with managing my allotted resources. Perhaps there is merit in the adage to under-promise and over-deliver.
+                I look forward to continuing development on all the projects I started this week.Going forward my focus will be narrowed and better thought out.
             </p>
+            </div>
         </div>
     )
 }
