@@ -6,7 +6,9 @@ export default function About() {
             <h2>About Lingo Grow</h2>
 
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque egestas diam in arcu cursus. Viverra nam libero justo laoreet. Ut sem viverra aliquet eget sit. Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat. Aliquet bibendum enim facilisis gravida neque convallis a. Rhoncus aenean vel elit scelerisque mauris. Ultrices mi tempus imperdiet nulla malesuada. Nunc id cursus metus aliquam. Morbi enim nunc faucibus a pellentesque. Facilisis gravida neque convallis a cras semper auctor neque. In egestas erat imperdiet sed euismod. At consectetur lorem donec massa sapien faucibus et molestie ac.
+                Lingo Grow is an app that impplements two API's to pull iformation on any given word the user would like to know more aoubt. The idea is to both grow the vocabulary , as well as comprehension with street sland and urban usage. The app is not yet complete so for now, there is some lore ipsum down below to fill this about with data.
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque egestas diam in arcu cursus. Viverra nam libero justo laoreet. Ut sem viverra aliquet eget sit. Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat.
 
             Metus aliquam eleifend
             </p>
@@ -15,9 +17,10 @@ export default function About() {
             <h2>
                 The Development Process
             </h2>
-                <p>Mi in nulla posuere sollicitudin aliquam. Interdum consectetur libero id faucibus nisl tincidunt eget. Neque aliquam vestibulum morbi blandit. Aliquam vestibulum morbi blandit cursus. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Tempus urna et pharetra pharetra massa massa ultricies mi. Urna nunc id cursus metus aliquam eleifend mi. At tellus at urna condimentum mattis pellentesque id nibh tortor. Sagittis vitae et leo duis ut. Nibh ipsum consequat nisl vel. Mattis enim ut tellus elementum sagittis. Eget egestas purus viverra accumsan in nisl. Faucibus interdum posuere lorem ipsum dolor sit. Orci eu lobortis elementum nibh. Pharetra vel turpis nunc eget lorem dolor sed viverra. Id porta nibh venenatis cras sed felis. Dictum non consectetur a erat nam at.
-
-            Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. A scelerisque purus semper eget duis. Eget duis at tellus at urna. Cursus mattis molestie a iaculis at erat pellentesque. Diam quam nulla porttitor massa id. Tempor nec feugiat nisl pretium fusce. Cum sociis natoque penatibus et magnis dis parturient. Leo integer malesuada nunc vel risus commodo viverra maecenas. Fusce ut placerat orci nulla pellentesque dignissim. Ipsum dolor sit amet consectetur adipiscing. Sagittis vitae et leo duis ut diam quam. Lectus vestibulum mattis ullamcorper velit. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Tempus urna et pharetra pharetra massa.
+            <p>
+            This past week I was given the assignment to build a React app using Redux. The requirements were simple but relevant. This was a tremendous opportunity to display my knowledge of the past three weeks of learning we did here at DigitalCrafts bootcamp. Looking back on the four days I was given to create this project, I feel my time/assets could have been better managed at the start. The first day I spent researching potential builds, weighing in the scope, production time, and over all applicability to demo the technologies I recently learned. The second I spent building out a project that was doomed to fail. I bit off more than I could chew and got lost in the sauce of styling before my functionality was complete. The third and fourth day I spent creating two separate apps. They essentially did very similar things, had an API, CRUD, implemented Redux and met the requirements we were given.
+One of the lessons I can take away from this week of development, is that initial planning is worth it’s weight in gold. So much wasted effort went into creating a poorly planned out project, and too much time was wasted on styling before the project had even taken off. Admittedly, I was too presumptuous with my time and ability to handle blockers that came up. In the future, I will be more diligent with managing my allotted resources. Perhaps there is merit in the adage to under-promise and over-deliver.
+I look forward to continuing development on all the projects I started this week.Going forward my focus will be narrowed and better thought out.
             </p>
         </div>
     )

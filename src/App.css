@@ -50,6 +50,13 @@ ul {
   border-radius: 10px;
 }
 
+/* body .landingPhoto {
+  background-image: url("../src/assets/landingPhoto.jpg");
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+} */
+
 @media screen and (max-width: 450px) {
   .hamburger {
     position: absolute;
