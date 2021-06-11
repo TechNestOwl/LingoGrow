@@ -1,11 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import lingoGrow from "../assets/lingoGrow.png"
 
 export default function Nav() {
     return (
         <div>
             <nav>
-                <ul>
+                <div className="nav-logo">
+                    <Link to="/">
+                    <img src={lingoGrow} alt="logo"/>
+                    </Link>
+                </div>
+                <ul className="navLinkContainer">
                     <Link to="/">
                         <li className="navLinks">Home</li>
                     </Link>

@@ -6,11 +6,10 @@ import Contact from './components/Contact';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import {useSelector} from "react-redux";
+import NotFound from './components/NotFound';
 
 function App() {
 
-  const searchWord = useSelector(state => state.wordInfo)
 
   return (
     <div className="App">
@@ -21,6 +20,7 @@ function App() {
             <Route path="/Explore" component={Explore} />
             <Route path="/About" component={About} />
             <Route path="/Contact" component={Contact} />
+            <Route path="*" component={NotFound} />
           </Switch>
           <Footer />
       </Router>

@@ -1,8 +1,8 @@
 import SET_WORD_INFO from "../action-types/userActionType";
 
-const initialState = {
+const initialState = [
 
-};
+];
 
 const wordReducer = (state = initialState, action) => {
     switch(action.type){
