@@ -21,7 +21,7 @@ export default function Explore(props) {
             }
                 })
                 const jsonData = await data.json()
-                console.log(jsonData)
+                // console.log(jsonData)
                 displayInfo(dispatch,jsonData);
     };
     
@@ -47,15 +47,15 @@ export default function Explore(props) {
             </form>
             
             <div className="Cards">
-                {searchWord&&searchWord.map((word) => {
+                {searchWord&&searchWord.map((word,index) => {
                 return(
                     <div className="cardContainer">
-                        <Card>
+                        <Card key={index} className="individualCard">
                             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
                                 <Card.Body>
                                     <Card.Title><h3>{word.definition}</h3></Card.Title>
                                     <Card.Text>
-                                                        <p>{word.partOfSpeech}</p>
+                                                        {word.partOfSpeech}
                                     </Card.Text>
                                     {/* <Button variant="primary">Go somewhere</Button> */}
                                 </Card.Body>

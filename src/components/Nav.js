@@ -22,6 +22,11 @@ export default function Nav() {
                     <li className="navLinks">About</li>
                     </Link>
                 </ul>
+                <div className="hamburger">
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </div>
             </nav>
         </div>
     )
