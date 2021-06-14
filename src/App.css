@@ -49,14 +49,12 @@ ul {
   background-color: rgb(92, 90, 90);
   border-radius: 10px;
 }
-
 /* body .landingPhoto {
   background-image: url("../src/assets/landingPhoto.jpg");
   height: 100%;
   background-size: cover;
   overflow: hidden;
 } */
-
 @media screen and (max-width: 525px) {
   .hamburger {
     position: absolute;
@@ -70,7 +68,7 @@ ul {
     width: 2px;
     height: 25px;
   }
-
+  
   .navLinkContainer {
     display: none;
   }
