@@ -68,11 +68,12 @@ ul {
     width: 2px;
     height: 25px;
   }
-  
+
   .navLinkContainer {
     display: none;
   }
 }
+/* Testing a commit on github */
 
 .footer {
   display: flex;
